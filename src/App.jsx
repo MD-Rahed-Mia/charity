@@ -20,6 +20,8 @@ import ManageAboutSection from "./pages/authPage/ManageAboutSection";
 import ManageMission from "./pages/authPage/ManageMission";
 import ManageAchivementSection from "./pages/authPage/ManageAchivementSection";
 import ManageSponsorSection from "./pages/authPage/ManageSponsorSection";
+import ManageGallerySection from "./pages/authPage/ManageGallerySection";
+import ManageContactSection from "./pages/authPage/ManageContactSection";
 
 function App() {
   return (
@@ -78,6 +80,22 @@ function App() {
             }
           />
 
+          <Route
+            path="/admin/manage-gallery-section"
+            element={
+              <PrivatePage>
+                <ManageGallerySection />
+              </PrivatePage>
+            }
+          />
+          <Route
+            path="/admin/manage-contact-section"
+            element={
+              <PrivatePage>
+                <ManageContactSection />
+              </PrivatePage>
+            }
+          />
           <Route path="/sign-in" element={<SignIn />} />
         </Routes>
       </BrowserRouter>

@@ -42,6 +42,18 @@ export default function Menu() {
         >
           Manage sponsor section
         </Link>
+        <Link
+          to={"/admin/manage-gallery-section"}
+          className="py-3 block text-white  cursor-pointer text-center border-b-2"
+        >
+          Manage gallery section
+        </Link>
+        <Link
+          to={"/admin/manage-contact-section"}
+          className="py-3 block text-white  cursor-pointer text-center border-b-2"
+        >
+          Manage contact section
+        </Link>
       </ul>
     </div>
   );
