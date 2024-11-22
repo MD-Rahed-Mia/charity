@@ -1,9 +1,3 @@
 {
-    "redirects": [
-      {
-        "source": "/vercel",
-        "destination": "https://www.google.com/search?q=vercel%3Adeploy",
-        "permanent": false
-      }
-    ]
-  }
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
